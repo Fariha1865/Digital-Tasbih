@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex flex-col items-center justify-center p-5">
+
+    <div class="flex justify-center items-center gap-2 mb-10 mt-96 md:mt-10 ">
+    <img src="tasbih.png" alt="" class="h-10 w-10">
+    <h1 class="text-4xl font-bold text-green-600"><span class="text-blue-500">Digital</span> Tasbih</h1>
+    </div>
+    <section class="flex flex-col justify-center">
+
+    <!-- cards holder div -->
+    <div class="flex flex-col md:flex-row justify-center gap-5 md:gap-20">
+    <div class="shadow-2xl rounded-xl">
+    <div class="card text-black ">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Subhan Allah</h2>
+    <p class="text-xl" id="subhanallah_count"></p>
+    <div class="card-actions justify-end">
+        <button class="btn bg-green-600 text-white hover:bg-green-600" id="sub-inc">Increment</button>
+      <button class="btn bg-red-600 text-white hover:bg-red-600" id="sub-dec">Decrement</button>
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="shadow-2xl rounded-xl">
+    <div class="card text-neutral-content text-black">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Alhamdulillah</h2>
+    <p class="text-xl" id="alhamdulillah_count"></p>
+    <div class="card-actions justify-end">
+        <button class="btn bg-green-600 text-white hover:bg-green-600" id="alh-inc">Increment</button>
+      <button class="btn bg-red-600 text-white hover:bg-red-600" id="alh-dec">Decrement</button>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="shadow-2xl rounded-xl">
+    <div class="card text-neutral-content text-black">
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Allahuakber</h2>
+    <p class="text-xl" id="allahuakber_count"></p>
+    <div class="card-actions justify-end">
+        <button class="btn bg-green-600 text-white hover:bg-green-600" id="alhakbr-inc">Increment</button>
+      <button class="btn bg-red-600 text-white hover:bg-red-600" id="alhakbr-dec">Decrement</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-16">
+    <button class="btn bg-yellow-600 text-white hover:bg-yellow-600" id="resetAll">Reset All</button>
+</div>
+</section>
+
+
+
+
+<script src="js/increment_decrement.js"></script>
+</body>
+</html>
